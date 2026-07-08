@@ -1,12 +1,11 @@
-# Your Project Name
+# Masakan Rumahan
 
-> Replace this title with your project name
+> Masakan Rumahan
 
 ## Description
 
-Brief description of your web layout project. Explain what it does, what it's for, and what problem it solves.
+This project is a landing page for a fictional home meals recipes. It includes (...). It's for anyone who is looking for a hearty and warm home meals yet easy to cook. It's best for people who craves the classic and basic taste of Indonesia's daily meals shared within our family.
 
-**Example:** This project is a landing page for a fictional coffee shop. It includes menu sections, gallery, and contact form.
 
 ## Preview
 
@@ -28,13 +27,13 @@ Brief description of your web layout project. Explain what it does, what it's fo
 ├── .gitignore
 └── README.md
 ```
-This project has a particular git branching strategy, so eachiteration should be developed on a separate  feature-branch. Each branch should maintain a separated README.md file with specific instructions related to the tecnologies used in that iteration. The sugestion for the branch structure in this project is:
+This project has a particular git branching strategy, so each iteration should be developed on a separate  feature-branch. Each branch should maintain a separated README.md file with specific instructions related to the technologies used in that iteration. The sugestion for the branch structure in this project is:
 
 ```
 /
 └── main
     └── develop
-        ├── vainilla-iteration 
+        ├── vanilla-iteration 
             ├── feature/navbar
             ├── feature/footer
             ├── feature/form
@@ -47,7 +46,7 @@ This project has a particular git branching strategy, so eachiteration should be
 
 ```
 ## BECAREFUL!
-From this section of the readme you shuld to write in base on the tecnology context selected.
+From this section of the readme you should to write in base on the technology context selected.
 
 ## Technologies Used
 
