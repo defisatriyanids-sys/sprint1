@@ -1,65 +1,56 @@
-<!doctype html>
-<html lang="es">
-  <head>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-    <title>Masakan Rumahan</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="src/css/style.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <div class="sidebar">
-    <a class="logo" href="#">Registrate o entra</a>
-    <p> Guarda recetas, sigue a otros miembros, comparte tu cocina y, mucho más!</p>
-    <a class="logo-premium" href="#">Premium</a>
-    <a class="logo-retos" href="#">Retos</a>
-    <a class="logo-preguntas-frecuentes" href="#">Preguntas Frecuentes</a>
-    <a class="logo-opinion" href="#">Enviar opinión</a>
-    <a class="logo-region" href="#">Región</a>
+  <title>Cookpad</title>
+  
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"
+   <a href="#"> Cookpad </a>
     </div>
-     <header class="hero">
-       <h1>Cookpad</h1>
-       <input type="text" placeholder="Buscar por recetas o ingredientes" />
-       <a class="btn btn-buscar" href="#">Buscar</a>
-       <a class="btn btn-login" href="#">Iniciar sesión</a>
-       <a class="btn btn-register" href="#">Registrarse</a>
+    <nav class="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <a href="#" class="login-button">Login</a>
+      <a href="#" class="register-button">Register</a>
+    </div>
+  </header>
 
-     </header> 
-     <main>
-      <section class="recetas-destacadas">
-        <h2>Lo más buscado </h2>
-       <article>
-        <h2>Comidas frescas para el verano</h2>
-       </article>
-       <article>
-        <h2>Ensaladas</h2>
-       </article>
-       <article>
-        <h2>Recetas faciles</h2>
-        </article>
-     </main>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="tag">
+            Cook, Share, & Inspire
+          </p>
+
+          <h1> Home cooking made simple.</h1>
+
+          <p class="description">
+            Discover thousands of recipes from people just like you.
+          </p>
+
+          <form class="search-form">
+            <label class="sr-only" for="search">Search for recipes</label>
+            <input type="text" id="search" name="search" placeholder="Search for recipes">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+
+        <div class="hero-image">
+          <img src="src/images/hero-image.jpg" alt="Delicious food">
+        </div>
       </section>
-      <section class="sobre-cookpad">
-        <h2>Sobre Cookpad</h2>
-        <article>
-          <p>En Cookpad, nuestra misión es hacer que la cocina diaria sea algo divertido. Creemos firmemente que cocinar es la clave para que todos tengamos una vida más sana y más feliz y un planeta más cuidado. Ofrecemos a todos los que cocináis en casa cada día, y desde cualquier lugar del mundo, un espacio en el que nos ayudamos mutuamente, compartiendo recetas y trucos de cocina
-            Hazte a Premium para obtener servicios y beneficios únicos!</p>
-        </article>
-          <h2>Cookpad en el mundo</h2>
-          <p>...</p>
-        </article>
-          <h2>Para saber más</h2>
-          <p>Cookpad Premium</p>
-          <p>Unete al equipo</p>
-          <p>Ayuda</p>
-          <p>Blog</p>
-          <p>Terminos y Condiciones</p>
-          <p>Normas de la Comunidad Cookpad</p>
-          <p>Politica de Privacidad</p>
-          <p>Preguntas Frequentes</p>
-        </article>
-      </section>
-     <footer>
-       <p>&copy; 2026 Masakan Rumahan. Todos los derechos reservados.</p>
-       <p> Contacto: info@masakanrumahan.com</p>
-     </footer>
+    </main>
+</body>
+</html>

@@ -1,54 +1,118 @@
-body{
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-.sidebar {
+boxing {
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    box-sizing: border-box;
 }
 
-.sidebar a {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
     display: block;
-    color: black;
-    padding: 16px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo a{
     text-decoration: none;
+    font-size: clamp(2rem,5vw,2.8 rem);
+    color: #F47C20;
+    font-weight: bold;
 }
 
-.sidebar a.active {
-    background-color: #ffffff;
-    color: #ffffff;
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.sidebar a:hover:not(.active) {
-    background-color: #555;
+.nav-list a{
+    text-decoration: none;
+    color: #444;
+}
+
+.nav-list a:hover{
+    color: #F47C20;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.login-button, .register-button{
+    text-decoration: none;
+    padding:.8rem 1.2rem;
+    border-radius: 8px;
+}
+
+.login-button{
+    color: #F47C20;
+    border: 2px solid #F47C20;
+}
+
+.register-button{
     color: white;
+    background: #F47C20;
+    border: 2px solid #F47C20;
 }
 
-div.hero{
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
+.hero{
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-@media screen and (max-width: 700px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .sidebar a {float: left;}
-    div.hero {margin-left: 0;}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-@media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
+.tag{
+    color: #F47C20;
+    font-weight: bold;
+}
+
+.hero h1{
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.2;
+}
+
+.description{
+    font-size:1rem;
+}
+
+.search-form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.search-form input{
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.search-form button{
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #F47C20;
+    color: white;
+    cursor: pointer;
 }
