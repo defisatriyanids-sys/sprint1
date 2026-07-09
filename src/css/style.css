@@ -1,10 +1,12 @@
-boxing {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    margin: 40px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     background: #ffffff;
@@ -17,8 +19,8 @@ img {
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-direction: row;
     gap: 1rem;
     padding: 1rem;
     background: white;
@@ -31,6 +33,34 @@ img {
     align-items: left;
 }
 
+.navigation-bar ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.navigation-bar li a{
+   display: block;
+   color: black;;
+   padding: 0px 16px;
+   text-decoration: none;
+}
+
+.navigation-bar li a.active{
+    background-color: grey;
+    color: white;
+}
+
+.navigation-bar a:hover:not(.active){
+    background-color: grey;
+    color: white;
+}
+
 .nav-list{
     list-style: none;
     display: flex;
@@ -38,37 +68,39 @@ img {
     gap: 1rem;
 }
 
-.nav-list a{
-    text-decoration: none;
-    color: #444;
-}
-
-.nav-list a:hover{
-    color: #F47C20;
-}
-
 .buttons{
+    justify-content: right;
+    align-items: right;
     display: flex;
     gap: 1rem;
+    float: right;
 }
 
 .login-button, .register-button{
     text-decoration: none;
-    padding:.8rem 1.2rem;
+    padding:.7rem 0.5rem;
     border-radius: 8px;
 }
 
 .login-button{
-    color: #F47C20;
-    border: 2px solid #F47C20;
+    color: grey;
+    border: 0.5px;
+    border-style: solid;
+    border-color: grey;
 }
 
 .register-button{
     color: white;
     background: #F47C20;
-    border: 2px solid #F47C20;
+    border: 0.5px;
+    border-style: solid;
+    border-color: #F47C20;
 }
 
+.main{
+    margin: 60px;
+    padding: 0px;
+}
 .hero{
     display: grid;
     gap: 2rem;
