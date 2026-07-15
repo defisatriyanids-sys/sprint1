@@ -26,13 +26,13 @@
       <a href="#" class="register-button">+ Crear</a>
     </section>
   </header>
-  <main>
+  <main aria-label="Cookpad landing page">
     <section class="hero">
       <div class="hero-image">
         <img src="src/assets/img/logo_cookpad_hero.png" alt="Cookpad Logo">
         <form class="search-form">
           <label class="sr-only" for="search">Search for recipes</label>
-          <input type="text" id="search" name="search" placeholder="Search for recipes">
+          <input type="search" id="search" name="search" placeholder="Search for recipes" aria-label="Search recipes">
           <button type="submit">Search</button>
         </form>
       </div>
@@ -42,9 +42,16 @@
     </section>
     <section class="popular-recipes">
       <h2> Lo más buscado</h2>
-      <ul>
-        <li><a href="#">Comidas frescas para verano</a></li>
-        <li><a href="#">Ensaladas</a></li>
+      <div class="recipe-grid">
+        <article class="recipe-card"
+        <img src="src/assets/img/ensalada verano.webp" alt="Ensalada fresca para el verano">
+        <h3> Comidas frescas para verano </h3>
+      </article>
+      <article class="recipe-card">
+        <img src="src/assets/img/ensalada.webp"
+      </article>
+      </div>
+      </section>
         <li><a href="#">Recetas fáciles</a></li>
       </ul>
     </section>
@@ -53,16 +60,16 @@
       <p>En Cookpad, nuestra misión es hacer que la cocina diaria sea algo divertido. Creemos firmemente que cocinar es
         la clave para que todos tengamos una vida más sana y más feliz y un planeta más cuidado. Ofrecemos a todos los
         que cocináis en casa cada día, y desde cualquier lugar del mundo, un espacio en el que nos ayudamos mutuamente,
-        compartiendo recetas y trucos de cocina></p>
+        compartiendo recetas y trucos de cocina.</p>
     </section>
     <section class="cookpad-branch">
       <h3>Cookpad en el mundo</h3>
-      <p></p> 🇺🇸 United States 🇬🇧 United Kingdom 🇪🇸 España 🇦🇷 Argentina 🇺🇾 Uruguay 🇲🇽 México 🇨🇱 Chile 🇻🇳
+      <p> 🇺🇸 United States 🇬🇧 United Kingdom 🇪🇸 España 🇦🇷 Argentina 🇺🇾 Uruguay 🇲🇽 México 🇨🇱 Chile 🇻🇳
       Việt
       Nam 🇹🇭 ไทย 🇮🇩 Indonesia 🇫🇷 France 🇸🇦 السعودية 🇹🇼 臺灣 🇮🇹 Italia 🇮🇷 ایران 🇮🇳 India 🇭🇺
       Magyarország 🇳🇬 Nigeria 🇬🇷 Ελλάδα 🇲🇾 Malaysia 🇵🇹 Portugal 🇺🇦 Україна 🇯🇵 日本</p>
     </section>
-    <section class="más informacion">
+    <section class="más-informacion">
       <h3>Para saber más</h3>
       <ul>
         <li><a href="#">Cookpad Premium</a></li>
@@ -82,6 +89,7 @@
         <a href="#"><img src="src/assets/img/appstore.png" alt="App Store"></a>
         <a href="#"><img src="src/assets/img/playstore.png" alt="Google Play Store"></a>
       </div>
+      </section>
     </main>
 </body>
 
