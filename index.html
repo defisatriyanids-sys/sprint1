@@ -12,7 +12,11 @@
 
 <body>
   <header class="header">
-    <nav class="navigation-bar" aria-label="Main Navigation">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-navigation"
+      aria-label="Abrir menú de navegación">
+      <img src="src/assets/img/logo_circle.png" alt="Cookpad menu icon" width="36" height="36" decoding="async">
+    </button>
+    <nav id="main-navigation" class="navigation-bar" aria-label="Main Navigation">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Recipes</a></li>
@@ -21,56 +25,76 @@
       </ul>
     </nav>
 
+    <form class="search-form">
+      <label class="sr-only" for="search">Search for recipes</label>
+      <input type="search" id="search" name="search" placeholder="Search for recipes" aria-label="Search recipes">
+      <button type="submit">Search</button>
+    </form>
+
     <section class="buttons">
       <a href="#" class="login-button">Entrar</a>
       <a href="#" class="register-button">+ Crear</a>
     </section>
   </header>
+
   <main aria-label="Cookpad landing page">
     <section class="hero">
-      <div class="hero-image">
-        <img src="src/assets/img/logo_cookpad_hero.png" alt="Cookpad Logo">
-        <form class="search-form">
-          <label class="sr-only" for="search">Search for recipes</label>
-          <input type="search" id="search" name="search" placeholder="Search for recipes" aria-label="Search recipes">
-          <button type="submit">Search</button>
-        </form>
-      </div>
+      <h1>Cookpad</h1>
       <div class="banner-image">
-        <img src="src/assets/img/banner.webp" alt="Banner Image">
+        <img src="src/assets/img/banner.webp">
       </div>
     </section>
     <section class="popular-recipes">
-      <h2> Lo más buscado</h2>
+      <h2>Lo más buscado</h2>
       <div class="recipe-grid">
-        <article class="recipe-card"
-        <img src="src/assets/img/ensalada verano.webp" alt="Ensalada fresca para el verano">
-        <h3> Comidas frescas para verano </h3>
-      </article>
-      <article class="recipe-card">
-        <img src="src/assets/img/ensalada.webp"
-      </article>
+        <article class="recipe-card">
+          <img src="src/assets/img/ensalada_verano.webp" alt="Comidas fresca para el verano">
+          <h3> Comidas frescas para verano </h3>
+        </article>
+        <article class="recipe-card">
+          <img src="src/assets/img/ensalada.webp" alt="Recetas de ensaladas">
+
+          <h3> Ensalada recetas</h3>
+        </article>
       </div>
-      </section>
-        <li><a href="#">Recetas fáciles</a></li>
-      </ul>
     </section>
     <section class="about-cookpad">
-      <h3>Sobre Cookpad</h3>
+      <h2>Sobre Cookpad</h2>
       <p>En Cookpad, nuestra misión es hacer que la cocina diaria sea algo divertido. Creemos firmemente que cocinar es
         la clave para que todos tengamos una vida más sana y más feliz y un planeta más cuidado. Ofrecemos a todos los
         que cocináis en casa cada día, y desde cualquier lugar del mundo, un espacio en el que nos ayudamos mutuamente,
         compartiendo recetas y trucos de cocina.</p>
     </section>
-    <section class="cookpad-branch">
-      <h3>Cookpad en el mundo</h3>
-      <p> 🇺🇸 United States 🇬🇧 United Kingdom 🇪🇸 España 🇦🇷 Argentina 🇺🇾 Uruguay 🇲🇽 México 🇨🇱 Chile 🇻🇳
-      Việt
-      Nam 🇹🇭 ไทย 🇮🇩 Indonesia 🇫🇷 France 🇸🇦 السعودية 🇹🇼 臺灣 🇮🇹 Italia 🇮🇷 ایران 🇮🇳 India 🇭🇺
-      Magyarország 🇳🇬 Nigeria 🇬🇷 Ελλάδα 🇲🇾 Malaysia 🇵🇹 Portugal 🇺🇦 Україна 🇯🇵 日本</p>
+    <section class="country-list">
+      <h2>Cookpad en el mundo</h2>
+      <ul class="country-items">
+        <li>🇺🇸 United States</li>
+        <li>🇬🇧 United Kingdom</li>
+        <li>🇪🇸 España</li>
+        <li>🇦🇷 Argentina</li>
+        <li>🇺🇾 Uruguay</li>
+        <li>🇲🇽 México</li>
+        <li>🇨🇱 Chile</li>
+        <li>🇻🇳 ViệtNam</li>
+        <li>🇹🇭 ไทย</li>
+        <li>🇮🇩 Indonesia</li>
+        <li>🇫🇷 France</li>
+        <li>🇸🇦 السعودية</li>
+        <li>🇹🇼 臺灣</li>
+        <li>🇮🇹 Italia</li>
+        <li>🇮🇷 ایران</li>
+        <li>🇮🇳 India</li>
+        <li>🇭🇺 Magyarország</li>
+        <li>🇳🇬 Nigeria</li>
+        <li>🇬🇷 Ελλάδα</li>
+        <li>🇲🇾 Malaysia</li>
+        <li>🇵🇹 Portugal</li>
+        <li>🇺🇦 Україна</li>
+        <li>🇯🇵 日本</li>
+      </ul>
     </section>
-    <section class="más-informacion">
-      <h3>Para saber más</h3>
+    <section class="more-information">
+      <h2>Para saber más</h2>
       <ul>
         <li><a href="#">Cookpad Premium</a></li>
         <li><a href="#">Únete al equipo</a></li>
@@ -82,19 +106,25 @@
         <li><a href="#">Preguntas Frecuentes</a></li>
       </ul>
     </section>
-    <section class="descarga-app">
-      <h3>Descarga nuestra app</h3>
+
+    <section class="download-app">
+      <h2>Descarga nuestra app</h2>
       <p>Descubre recetas, guarda tus favoritas y comparte tus propias creaciones con la comunidad de Cookpad.</p>
       <div class="app-buttons">
-        <a href="#"><img src="src/assets/img/appstore.png" alt="App Store"></a>
-        <a href="#"><img src="src/assets/img/playstore.png" alt="Google Play Store"></a>
+        <a href="#" class="download-appstore">
+          <img src="src/assets/img/logo_appstore.png" alt="App Store"></a>
+        <a href="#" class="download-playstore">
+          <img src="src/assets/img/logo_googleplay.png" alt="Google Play Store"></a>
       </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>&copy; Cookpad Inc.</p>
+      <section class="footer-image">
+        <img src="src/assets/img/footer_image.webp">
       </section>
-    </main>
+    </div>
+  </footer>
 </body>
-
-<footer>
-  <p>&copy; Cookpad Inc.</p>
-</footer>
-
 </html>
